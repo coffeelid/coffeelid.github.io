@@ -1,0 +1,68 @@
+@media screen and (max-width: 1600px){
+	/*header responsive*/
+	
+	header .wrapper{
+		flex-wrap: nowrap;
+	}
+	header .wrapper .logo .img-container{
+		width: 180px;
+	}
+	header .wrapper nav ul{
+		width: auto;
+		justify-content: flex-start;
+	}
+
+	header .wrapper .btn-phones{
+		width: auto;
+	}
+	header .wrapper .btn-phones .btn{
+		line-height: normal;
+		padding-top:8px;
+		padding-bottom: 8px;
+	}
+	header .wrapper .phones{
+			margin-left:1rem;	
+	}
+}
+
+
+@media screen and (max-width: 1400px){
+	header .wrapper .btn-phones{
+		flex-direction: column-reverse;
+	}
+	header .wrapper{
+		justify-content: space-between;
+	}
+	header .wrapper .btn-phones .btn{
+		margin: 5px 0;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+}
+
+@media screen and (max-width: 960px){
+	header .wrapper nav{
+		order: 2;
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		
+	}
+	header .wrapper nav ul{
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 100%;
+	    height: auto;
+	    max-width: 480px;
+	    width: 100%;
+	    padding: 10px 15px;
+	    box-sizing: border-box;
+	    background: #fff;
+	    box-shadow: 0 8px 10px 0px rgba(0,0,0,.2);
+	}
+	
+	header .wrapper nav .mobile-menu{
+		display: block;
+	}
+}
